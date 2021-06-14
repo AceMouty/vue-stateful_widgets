@@ -33,9 +33,11 @@ STEPS 4, 5, 6:
 </template>
 
 <script>
+
 const initialMood = 'Not sure how I feel';
 const happyMood = 'Quite happy!';
 const sadMood = 'Rather sad';
+
 export default {
     name: 'Moods',
     data() {
@@ -60,7 +62,3 @@ export default {
     }
 }
 </script>
-
-<style>
-
-</style>
