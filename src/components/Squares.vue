@@ -43,6 +43,15 @@ export default {
        }
     },
     methods: {
+        
+        markActive(id) {
+            // This is a helper used inside an _inline_ click handler (see above).
+            // Set the id argument to become the active id in our data property
+            // (unless it already is, in which case we should reset
+            // the currently active square id back to initial state).
+        }
+    },
+    computed: {
         getComputedClass(id) {
           /*
             This is NOT a click handler but a helper, used inside the template (see above).
@@ -51,12 +60,6 @@ export default {
             set 'active' to true, set it to false otherwise.
             Right-click and "inspect element" on the square to see its effect.
           */
-        },
-        markActive(id) {
-            // This is a helper used inside an _inline_ click handler (see above).
-            // Set the id argument to become the active id in our data property
-            // (unless it already is, in which case we should reset
-            // the currently active square id back to initial state).
         }
     }
 }
