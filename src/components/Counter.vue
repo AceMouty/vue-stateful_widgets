@@ -1,7 +1,7 @@
 <!--
 Counter Instructions
 
-How many slices of data do you think are necessary to act as "sources of truth" for all
+How many data properties do you think are necessary to act as "sources of truth" for all
 the things that change in this widget? Give it some thought before continuing reading!
 
 STEP 0:

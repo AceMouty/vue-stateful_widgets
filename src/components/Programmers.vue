@@ -12,9 +12,8 @@ Find comments below to help you along.
       <h2>Programmers</h2>
       <div class='programmers'>
        <!-- 
-          Nasty bug! We should loop over a data property, instead of 'listOfAwesome'.
-          We might think: "it works, though!" But if the list of programmers is not a data property,
-          we could never add or edit programmers in the future. It would look as if nothing happened 
+           Nasty bug! We are looping through a array with data in it, but for some reason
+          we dont have anything render on the scree...Fix!
        --> 
        <div class="programmer" v-for="dev in listOfAwesome" v-bind:key="dev.id">
            {{ dev.name }}

@@ -15,17 +15,16 @@ Find comments below to help you along
       <h2>Squares</h2>
       <div class='squares'>
         <!--
-          Nasty bug! We should map over a slice of state, instead of 'listOfSquareIds'.
-          We might say: "it works, though!" But if the list of squares is not state,
-          we could never add squares, change squares or remove squares in the future. Fix!
+          Nasty bug! We are looping through a array with data in it, but for some reason
+          we dont have anything render on the scree...Fix!
         -->
         <div
-            v-for="id in lisOfSquareIds"
+            v-for="id in listOfSquareIds"
             v-bind:key="id"
             v-bind:id="id"
             v-bind:class="getComputedClass(id)"
             v-on:click="() => markActive(id)"
-            class="squares"
+            class="square"
         ></div>
       </div>
     </div> 
