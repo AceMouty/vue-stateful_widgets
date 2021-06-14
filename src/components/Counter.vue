@@ -18,7 +18,7 @@ STEP 2:
 
 STEP 3:
   We need to replace some hard-coded info in the template with expressions, inside mustache syntax (double curly braces).
-  Start by replacing the character "0" with {{ count }}. The 'count' slice of data is the source of truth here.
+  Start by replacing the character "0" with {{ count }}. The 'count' data attribute is the source of truth here.
   Then, replace the word "even" with a ternary: {{ if count is even number, then string "even", else string "odd" }}.
 
   Docs: https://v3.vuejs.org/guide/template-syntax.html#using-javascript-expressions
