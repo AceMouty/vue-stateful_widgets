@@ -33,6 +33,8 @@ STEP 4:
   This click handler needs to toggle the spinner by setting "the on / off state" to be the opposite of what it currently is.
   Do you remember the logical operator we use to do "not"?
 -->
+
+<!-- Step 0 -->
 <template>
     <div class='widget-spinner container'>
       <h2>Spinner</h2>
@@ -48,12 +50,13 @@ export default {
     name: "Spinner",
     data() {
         return {
+            // Step 1
             
         }
     },
     methods: {
         toggleSpinner() {
-
+            // Step 4
         }
     }
 }
